@@ -22,7 +22,6 @@ class Memory:
             if len(self.spoken) == 2020:
                 break
 
-
     def start(self):
         self.loop()
 

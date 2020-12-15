@@ -7,7 +7,7 @@ class Memory:
         self.starting_numbers = starting_numbers
         self.spoken = {}
         for idx, i in enumerate(self.starting_numbers[:-1]):
-            self.spoken[i] = idx  + 1
+            self.spoken[i] = idx + 1
 
         self.found_num = None
 
@@ -21,7 +21,7 @@ class Memory:
                 num = t - 1 - self.spoken[past_num]
             else:
                 num = 0
-    
+
             if t == self.t_to_find:
                 self.found_num = num
                 break
